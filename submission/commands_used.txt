@@ -1,0 +1,65 @@
+    1  pwd
+    2  mkdir project
+    3  ls
+    4  cd project
+    5  mkdir docs bin scripts
+    6  ls
+    7  cd docs
+    8  echo "This is the initial report by studento1" > report.txt
+    9  ls
+   10  cat report.txt
+   11  ls -la
+   12  echo "Top secret" > .secret.txt
+   13  ls
+   14  ls -la
+   15  ls -a
+   16  nano report.txt
+   17  ls
+   18  cp report.txt /home/studento1/project/scripts 
+   19  ls /home/studento1/project/scripts
+   20  ls -a
+   21  mv .secret.txt /home/studento1/project/bin
+   22  ls -a /home/studento1/project/bin
+   23  cd /home/studento1/project/bin
+   24  ls -a /home/studento1/project/bin
+   25  mv .secret.txt classified.txt
+   26  ls
+   27  cat classified.txt
+   28  ls
+   29  cd scripts
+   30  nano install.sh
+   31  ls -l
+   32  chmod +x install.sh
+   33  ls -l
+   34  ./install.sh
+   35  cd ..
+   36  ls
+   37  cd bin
+   38  ls
+   39  ls -l
+   40  chmod 660 classified.txt
+   41  ls -l
+   42  cd ..
+   43  cd docs
+   44  ls
+   45  touch admin_notes.txt
+   46  ls
+   47  ls -l
+   48  chmod 600 admin.txt
+   49  chmod 600 admin_notes.txt
+   50  ls -l
+   51  ls
+   52  rm admin_notes.txt
+   53  cd ..
+   54  mkdir backup
+   55  cd docs
+   56  ls
+   57  cp report.txt /home/studento1/project/backup 
+   58  cd ..
+   59  cd scripts
+   60  ls
+   61  cp install.sh /home/studento1/project/backup 
+   62  cd ~
+   63  tree project
+   64  tree project > tree_project
+   65  history
